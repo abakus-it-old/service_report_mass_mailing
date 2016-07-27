@@ -1,7 +1,11 @@
 {
    'name': "Service report mass mailing",
     'version': '1.0',
-    'depends': ['analytic','contract_report'],
+    'depends': [
+        'account_analytic_account_improvements',
+        'sla',
+        'contract_timesheet_activities_on_site_management',
+    ],
     'author': "Bernard DELHEZ, AbAKUS it-solutions SARL",
     'website': "http://www.abakusitsolutions.eu",
     'category': 'Sales',
@@ -14,6 +18,7 @@
     
     This module has been developed by Bernard Delhez, intern @ AbAKUS it-solutions.
     """,
-    'data': ['wizard/contract_report_mass_mailing.xml',
-            ],
+    'data': [
+        'wizard/contract_report_mass_mailing.xml',
+    ],
 }
