@@ -9,7 +9,7 @@ class contract_report_mass_mailing(osv.osv_memory):
             context = {}
         active_ids = context.get('active_ids', []) or []
 
-        email_template_obj = self.pool['email.template']
+        email_template_obj = self.pool['mail.template']
         mail_mail_obj = self.pool['mail.mail']
         template_ids = email_template_obj.search(cr, uid, [('name', '=','Service report - Send by Email')], context=context)
         
